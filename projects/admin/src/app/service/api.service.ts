@@ -7,8 +7,10 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class APIService {
-  baseUrl: string = 'http://api.oceanpublicschool.com/';
-  rootUrl: string = 'http://oceanpublicschool.com/admin/';
+  // baseUrl: string = 'http://api.oceanpublicschool.com/';
+  // rootUrl: string = 'http://oceanpublicschool.com/admin/';
+  baseUrl: string = 'http://localhost:56720/';
+  rootUrl: string = 'http://localhost:4200/';
   IsAuth=new BehaviorSubject(false);
   error = '';
   headers = new HttpHeaders().set('Content-Type', 'application/json')
