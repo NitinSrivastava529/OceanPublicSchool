@@ -16,13 +16,12 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.logo=this._config.rootUrl+'assets/logo.png';
   }
-  login() {
-     this._config.Login();    
-    // if (this.username == 'ocean' && this.password == 'ocean@admin') {      
-    //     this._config.Login();    
-    // }
-    // else {
-    //   alert('Incorrect Username or Password!');
-    // }
+  login() {     
+    if (this.username == 'ocean' && this.password == 'ocean@admin') {      
+        this._config.Login();    
+    }
+    else {
+      alert('Incorrect Username or Password!');
+    }
   }
 }
